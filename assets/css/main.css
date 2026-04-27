@@ -310,12 +310,66 @@ input, select, textarea {
 }
 
 
+.voices {
+  padding: 80px 8%;
+  text-align: center;
+}
 
+.voices h2 {
+  text-align: center;
+  font-family: "jf openhuninn 2 1";
+}
 
+.voice-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 一列兩個 */
+  gap: 80px 60px; /* 上下間距、左右間距 */
+  max-width: 900px; /* 控制整體寬度，會更精緻 */
+  margin: 0 auto; /* 置中 */
+}
 
+@media (max-width: 600px) {
+  .voice-list {
+    grid-template-columns: 1fr; /* 手機一列一個 */
+    gap: 50px;
+  }
 
+  .voice-card {
+    text-align: center;
+  }
 
+  .voice-card p {
+    text-align: left;
+  }
+}
 
+.voice-card {
+  text-align: left;
+}
+
+.voice-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 25px;
+}
+
+.voice-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.voice-card p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.avatar {
+  border: 2px solid #ddd;
+}
 
 	@media screen and (max-width: 480px) {
 
